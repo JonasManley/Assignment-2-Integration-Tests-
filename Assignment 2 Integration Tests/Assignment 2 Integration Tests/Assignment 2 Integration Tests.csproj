@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C4180C0C-68AE-48F6-A1AC-36CEE9192F88}</ProjectGuid>
+    <ProjectGuid>{A7E1CE91-097B-4DF7-AB9B-D487F2080DCC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Assginment_2_Integration_Tests_Contract</RootNamespace>
-    <AssemblyName>Assginment 2 Integration Tests Contract</AssemblyName>
+    <RootNamespace>Assignment_2_Integration_Tests</RootNamespace>
+    <AssemblyName>Assignment 2 Integration Tests</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
