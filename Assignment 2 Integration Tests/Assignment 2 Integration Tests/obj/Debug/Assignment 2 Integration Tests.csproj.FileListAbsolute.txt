@@ -1,0 +1,6 @@
+C:\Users\Bruger\Documents\GitHub\Assignment-2-Integration-Tests-\Assignment 2 Integration Tests\Assignment 2 Integration Tests\bin\Debug\Assignment 2 Integration Tests.exe.config
+C:\Users\Bruger\Documents\GitHub\Assignment-2-Integration-Tests-\Assignment 2 Integration Tests\Assignment 2 Integration Tests\bin\Debug\Assignment 2 Integration Tests.exe
+C:\Users\Bruger\Documents\GitHub\Assignment-2-Integration-Tests-\Assignment 2 Integration Tests\Assignment 2 Integration Tests\bin\Debug\Assignment 2 Integration Tests.pdb
+C:\Users\Bruger\Documents\GitHub\Assignment-2-Integration-Tests-\Assignment 2 Integration Tests\Assignment 2 Integration Tests\obj\Debug\Assignment 2 Integration Tests.csprojAssemblyReference.cache
+C:\Users\Bruger\Documents\GitHub\Assignment-2-Integration-Tests-\Assignment 2 Integration Tests\Assignment 2 Integration Tests\obj\Debug\Assignment 2 Integration Tests.exe
+C:\Users\Bruger\Documents\GitHub\Assignment-2-Integration-Tests-\Assignment 2 Integration Tests\Assignment 2 Integration Tests\obj\Debug\Assignment 2 Integration Tests.pdb
