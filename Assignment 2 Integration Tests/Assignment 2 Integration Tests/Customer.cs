@@ -19,7 +19,7 @@ namespace Assignment_2_Integration_Tests
             this.id = id;
         }
 
-        public void transfer(int amount, Account account, Customer target)
+        public void transfer(int amount, IAccount account, ICustomer target)
         {
         }
 

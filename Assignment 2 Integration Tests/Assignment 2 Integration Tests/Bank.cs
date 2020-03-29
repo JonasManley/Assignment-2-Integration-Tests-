@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace Assignment_2_Integration_Tests
 {
-    public class Bank 
+    public class Bank : IBank
     {
         private string cvr;
         private string name;
         private ICustomer customer;
         private IAccount account;
-        private List<IAccount> accounts;
+        private static List<IAccount> accounts = new List<IAccount>();
 
         public Bank(string cvr, string name)
         {
@@ -26,9 +26,9 @@ namespace Assignment_2_Integration_Tests
             return accounts;
         }
 
-        public void AddAccount(IAccount account)
+        public void AddAccount(IAccount accountToAdd)
         {
-            accounts.Add(account);
+            accounts.Add(accountToAdd);
         }
 
         public IAccount GetAccount(string id)

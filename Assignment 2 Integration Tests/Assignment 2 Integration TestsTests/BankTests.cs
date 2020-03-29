@@ -23,8 +23,8 @@ namespace Assignment_2_Integration_Tests.Tests
         {
             
             //Arrange
-            ICustomer customerJonas = new Customer("2206921111", "Jonas pedersen", "1");
-            ICustomer customerChristoffer = new Customer("2206921111", "Christoffer dunk", "2");
+            Customer customerJonas = new Customer("2206921111", "Jonas pedersen", "1");
+            Customer customerChristoffer = new Customer("2206921111", "Christoffer dunk", "2");
             Account JonasAccount = new Account(bank, customerJonas, "1");
             Account ChristofferAccount = new Account(bank, customerChristoffer, "2");
             int TransferAmount = 500;
@@ -42,8 +42,8 @@ namespace Assignment_2_Integration_Tests.Tests
         public void TransferAmountBewteenAccounts_500kr_Successful_Mock()
         {
             //Arrange
-            ICustomer customerJonas = new Customer("2206921111", "Jonas pedersen", "1");
-            ICustomer customerChristoffer = new Customer("2206921111", "Christoffer dunk", "2");
+            Customer customerJonas = new Customer("2206921111", "Jonas pedersen", "1");
+            Customer customerChristoffer = new Customer("2206921111", "Christoffer dunk", "2");
             Account JonasAccount = new Account(bank, customerJonas, "1");
             Account ChristofferAccount = new Account(bank, customerChristoffer, "2");
             int TransferAmount = 500;
@@ -62,8 +62,8 @@ namespace Assignment_2_Integration_Tests.Tests
         public void TransferNegativeAmountBewteenAccounts_Minus500kr_ExecptionThrown()
         {
             //Arrange 
-            ICustomer customerJonas = new Customer("2206921111", "Jonas pedersen", "1");
-            ICustomer customerChristoffer = new Customer("2206921111", "Christoffer dunk", "2");
+            Customer customerJonas = new Customer("2206921111", "Jonas pedersen", "1");
+            Customer customerChristoffer = new Customer("2206921111", "Christoffer dunk", "2");
             Account JonasAccount = new Account(bank, customerJonas, "1");
             Account ChristofferAccount = new Account(bank, customerChristoffer, "2");
 
@@ -77,6 +77,7 @@ namespace Assignment_2_Integration_Tests.Tests
             JonasAccount.Transfer(TransferAmount, ChristofferAccount);
 
             //Assert
+            // ExpectedException type.
 
         }
 
@@ -84,7 +85,7 @@ namespace Assignment_2_Integration_Tests.Tests
         public void CreateAccountWith0Balance_Successful()
         {
             //Arrange
-            ICustomer customerJonas = new Customer("2206921111", "Jonas pedersen", "1");
+            Customer customerJonas = new Customer("2206921111", "Jonas pedersen", "1");
             Account JonasAccount = new Account(bank, customerJonas, "1");
             int TransferAmount = 0;
 
@@ -98,7 +99,7 @@ namespace Assignment_2_Integration_Tests.Tests
         public void CheckBalance_1000kr_Successful()
         {
             //Arrange
-            ICustomer customerJonas = new Customer("2206921111", "Jonas pedersen", "1");
+            Customer customerJonas = new Customer("2206921111", "Jonas pedersen", "1");
             Account JonasAccount = new Account(bank, customerJonas, "1");
 
             //Act 

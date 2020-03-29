@@ -8,7 +8,7 @@ namespace Assignment_2_Integration_Tests.Contract
 {
     public interface ICustomer
     {
-        void transfer(int amount, Account account, Customer target);
+        void transfer(int amount, IAccount account, ICustomer target);
 
         string getId();
     }

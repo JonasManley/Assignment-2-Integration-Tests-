@@ -8,9 +8,9 @@ namespace Assignment_2_Integration_Tests.Contract
 {
     public interface IAccount
     {
-        string number { get; set; }
-        long balance { get; set; }
-        Bank getBank();
+        abstract long Balance {get; set; }
+
+        IBank getBank();
 
         ICustomer getCustomer();
 
@@ -24,7 +24,7 @@ namespace Assignment_2_Integration_Tests.Contract
 
         void Deposit(IAccount target, long amount);
 
-        void Withdrawal(long amount, IAccount target);
+        //void Withdrawal(double amount, IAccount target);
 
     }
 }

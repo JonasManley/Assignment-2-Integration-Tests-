@@ -14,3 +14,19 @@ C:\Users\Bruger\Documents\GitHub\Assignment-2-Integration-Tests-\Assignment 2 In
 C:\Users\Bruger\Documents\GitHub\Assignment-2-Integration-Tests-\Assignment 2 Integration Tests\Assignment 2 Integration TestsTests\obj\Debug\Assignment 2 Integration TestsTests.csproj.CopyComplete
 C:\Users\Bruger\Documents\GitHub\Assignment-2-Integration-Tests-\Assignment 2 Integration Tests\Assignment 2 Integration TestsTests\obj\Debug\Assignment 2 Integration TestsTests.dll
 C:\Users\Bruger\Documents\GitHub\Assignment-2-Integration-Tests-\Assignment 2 Integration Tests\Assignment 2 Integration TestsTests\obj\Debug\Assignment 2 Integration TestsTests.pdb
+C:\Users\Jonas\source\repos\Assignment-2-Integration-Tests-\Assignment 2 Integration Tests\Assignment 2 Integration TestsTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Jonas\source\repos\Assignment-2-Integration-Tests-\Assignment 2 Integration Tests\Assignment 2 Integration TestsTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Jonas\source\repos\Assignment-2-Integration-Tests-\Assignment 2 Integration Tests\Assignment 2 Integration TestsTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Jonas\source\repos\Assignment-2-Integration-Tests-\Assignment 2 Integration Tests\Assignment 2 Integration TestsTests\bin\Debug\Assignment 2 Integration TestsTests.dll
+C:\Users\Jonas\source\repos\Assignment-2-Integration-Tests-\Assignment 2 Integration Tests\Assignment 2 Integration TestsTests\bin\Debug\Assignment 2 Integration TestsTests.pdb
+C:\Users\Jonas\source\repos\Assignment-2-Integration-Tests-\Assignment 2 Integration Tests\Assignment 2 Integration TestsTests\bin\Debug\Assignment 2 Integration Tests.exe
+C:\Users\Jonas\source\repos\Assignment-2-Integration-Tests-\Assignment 2 Integration Tests\Assignment 2 Integration TestsTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Jonas\source\repos\Assignment-2-Integration-Tests-\Assignment 2 Integration Tests\Assignment 2 Integration TestsTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Jonas\source\repos\Assignment-2-Integration-Tests-\Assignment 2 Integration Tests\Assignment 2 Integration TestsTests\bin\Debug\Assignment 2 Integration Tests.pdb
+C:\Users\Jonas\source\repos\Assignment-2-Integration-Tests-\Assignment 2 Integration Tests\Assignment 2 Integration TestsTests\bin\Debug\Assignment 2 Integration Tests.exe.config
+C:\Users\Jonas\source\repos\Assignment-2-Integration-Tests-\Assignment 2 Integration Tests\Assignment 2 Integration TestsTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Jonas\source\repos\Assignment-2-Integration-Tests-\Assignment 2 Integration Tests\Assignment 2 Integration TestsTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Jonas\source\repos\Assignment-2-Integration-Tests-\Assignment 2 Integration Tests\Assignment 2 Integration TestsTests\obj\Debug\Assignment 2 Integration TestsTests.csprojAssemblyReference.cache
+C:\Users\Jonas\source\repos\Assignment-2-Integration-Tests-\Assignment 2 Integration Tests\Assignment 2 Integration TestsTests\obj\Debug\Assignment 2 Integration TestsTests.csproj.CopyComplete
+C:\Users\Jonas\source\repos\Assignment-2-Integration-Tests-\Assignment 2 Integration Tests\Assignment 2 Integration TestsTests\obj\Debug\Assignment 2 Integration TestsTests.dll
+C:\Users\Jonas\source\repos\Assignment-2-Integration-Tests-\Assignment 2 Integration Tests\Assignment 2 Integration TestsTests\obj\Debug\Assignment 2 Integration TestsTests.pdb

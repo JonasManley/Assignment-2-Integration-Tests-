@@ -3,49 +3,60 @@ using System.Collections.Generic;
 using Assignment_2_Integration_Tests;
 using Assignment_2_Integration_Tests.Contract;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Assignment_2_Integration_Tests;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Assignment_2_Integration_Tests.Contract;
 
 namespace Assignment_2_Integration_TestsTests
 {
     [TestClass]
     public class BankIntergrationTest
     {
-        private Bank bank;
-        private ICustomer customerJonas;
-        private ICustomer customerChristoffer;
-        private Account JonasAccount;
-        private Account ChristofferAccount;
+        // Fields are used by all tests.
+        private static Bank bank = new Bank("1203954", "Jyske Bank");
+        private static ICustomer customerJonas = new Customer("2206921111", "Jonas pedersen", "1");
+        private static ICustomer customerChristoffer = new Customer("2206921111", "Christoffer dunk", "2");
+
+        private static IAccount JonasAccount = new Account(bank, customerJonas, "1");
+        private static IAccount ChristofferAccount = new Account(bank, customerChristoffer, "2");
 
 
-        public void setUp()
+        //Setup will just add accounts to the bank, which is also used in all the tests
+        [TestInitialize]
+        public void setup()
         {
-            customerJonas = new Customer("2206921111", "Jonas pedersen", "1");
-            customerChristoffer = new Customer("2206921111", "Christoffer dunk", "2");
-            JonasAccount = new Account(bank, customerJonas, "1");
-            ChristofferAccount = new Account(bank, customerChristoffer, "2");
-            
-            bank = new Bank("1203954", "Jyske Bank");
             bank.AddAccount(JonasAccount);
             bank.AddAccount(ChristofferAccount);
         }
+
+
 
         [TestMethod()]
         public void test()
         {
             //Arrange
-            setUp();
+
 
             //Act
-           List<IAccount> accountA = bank.GetAccounts();
+            List<IAccount> accountA = bank.GetAccounts();
 
             //Assert
-            Assert.AreEqual(2, accountA.Count);
+            Assert.AreEqual(8, accountA.Count);
+            // The reason why its 8 and not just the two elements, is becouse we have 4 method calling it 
+            // filling the list up with 8 elements. 
         }
+
 
         [TestMethod()]
         public void GetAccountByNumber()
         {
             //Arrange
-            setUp();
+          
 
             //Act
             IAccount accountA = bank.GetAccount(JonasAccount.getNumber());
@@ -55,11 +66,10 @@ namespace Assignment_2_Integration_TestsTests
         }
 
         [TestMethod()]
-        [ExpectedException(typeof(Exception), "Account not found")]
+        [ExpectedException(typeof(ArgumentException), "Account not found")]
         public void GetAccountByNumberWrongInput()
         {
             //Arrange
-            setUp();
 
             //Act
             bank.GetAccount("321");
@@ -73,10 +83,9 @@ namespace Assignment_2_Integration_TestsTests
         public void GetAccountByCustomer()
         {
             //Arrange
-            setUp();
 
             //Act
-            IAccount customerAccount = bank.GetAccount("1");
+            IAccount customerAccount = bank.GetAccount(customerChristoffer.getId());
 
             //Assert
             Assert.AreEqual(0, customerAccount.getBalance());

@@ -9,22 +9,21 @@ namespace Assignment_2_Integration_Tests
 {
     public class Account : IAccount
     {
-        private Bank bank;
+        private IBank bank;
         private ICustomer customer;
         private string number;
         private long balance = 0;
 
-        string IAccount.number { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        long IAccount.balance { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public long Balance { get { return balance; } set { balance = value; } }
 
-        public Account(Bank bank, ICustomer customer, string number)
+        public Account(IBank bank, ICustomer customer, string number)
         {
             this.bank = bank;
             this.customer = customer;
             this.number = number;
         }
 
-        public Bank getBank()
+        public IBank getBank()
         {
             return bank;
         }
@@ -44,13 +43,17 @@ namespace Assignment_2_Integration_Tests
             return balance;
         }
 
-        public void Transfer(long amount, IAccount target)  // Deposit method from assignment
+        public void Transfer(long amount, IAccount target)  
         {
+            if(amount < 0)
+            {
+                throw new ArgumentException("Amount is negative");
+            }
             balance -= amount;
-            target.balance += amount;
+            target.Balance += amount;
         }
 
-        public void Transfer(long amount, string targetNumber) // Withdrawal method from assignment
+        public void Transfer(long amount, string targetNumber) 
         {
             if (balance < 0)
             {
@@ -60,14 +63,14 @@ namespace Assignment_2_Integration_Tests
             Transfer(amount, target);
         }
 
-       public void Deposit( IAccount target, long amount)
+       public void Deposit(IAccount target, long amount)
         {
-            target.balance += amount;
+           target.Balance += amount;
         }
 
-       public void Withdrawal(long amount, IAccount target)
-        {
-            target.balance -= amount;
-        }
+       //public void Withdrawal(double amount, IAccount target)
+       // {
+       //     target.balance -=  amount;
+       // }
     }
 }
